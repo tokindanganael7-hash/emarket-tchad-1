@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits - EMarket Tchad</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        header {
+            background: #1a7431;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .navbar {
+            background: #145c28;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 12px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+        .navbar a:hover {
+            background: #1a7431;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        h2 { color: #1a7431; margin-bottom: 20px; text-align: center; }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img { max-width: 100%; border-radius: 5px; }
+        .price { color: #1a7431; font-weight: bold; font-size: 1.2em; margin: 10px 0; }
+        .btn {
+            background: #1a7431;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .btn:hover { background: #145c28; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛒 EMarket Tchad</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="/">Accueil</a>
+        <a href="/produits.html">Produits</a>
+        <a href="/apropos.html">À propos</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Tous nos produits</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Produit">
+                <h3>Produit exemple 1</h3>
+                <p class="price">5000 FCFA</p>
+                <button class="btn">Voir le produit</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Produit">
+                <h3>Produit exemple 2</h3>
+                <p class="price">12000 FCFA</p>
+                <button class="btn">Voir le produit</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Produit">
+                <h3>Produit exemple 3</h3>
+                <p class="price">8000 FCFA</p>
+                <button class="btn">Voir le produit</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EMarket Tchad - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
