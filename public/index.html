@@ -55,14 +55,36 @@
             color: #777;
             margin-top: 40px;
         }
-    </style>
+           .navbar {
+            background: #145c28;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 12px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+        .navbar a:hover {
+            background: #1a7431;
+        } </style>
 </head>
 <body>
     <header>
         <h1>🛒 EMarket Tchad</h1>
         <p>Votre marketplace en ligne au Tchad</p>
     </header>
-
+    <nav class="navbar">
+        <a href="/">Accueil</a>
+        <a href="/produits.html">Produits</a>
+        <a href="/apropos.html">À propos</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
     <div class="container">
         <div class="hero">
             <h2>Bienvenue sur EMarket Tchad</h2>
